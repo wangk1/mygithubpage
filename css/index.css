@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+/* Main Page*/
+html,body {
+	width:100%;
+	height:100%;
+
+}
+
+body{
+	
+	background-image:url("../res/homebackground.jpg");
+	background-attachment: fixed;
+	background-size:cover;
+	
+}
+
+
+.left{
+	float:left;
+
+}
+
+.right{
+	float:right;
+
+}
+/*The content container*/
+.content-container{
+	height:90%;
+	
+}
+
+/*The footer stuff*/
+.footer-container{
+	min-height:250px;
+	max-height:400px;
+	height:10%;
+	background-color:#3C3C3E;
+	border-radius: 10px 10px 0px 0px;
+	
+}
+
+/*Navigation Bar*/
+.main-nav{
+	height:10%;
+}
+
+.main-nav ul{
+	padding:0;
+	list-style-type:none;
+	display:table;
+	width:100%;
+	
+}
+
+.main-nav ul li{
+	display:table-cell;
+	margin:0 auto;
+	width:8%;
+	
+	text-align: center;
+}
+
+.main-nav ul li a:hover{
+	text-decoration:none !important;
+	-webkit-transition: all 2s ease;
+	border-bottom: 2px solid orange;
+
+}
+
+
+.main-nav a{
+	display: block;
+	padding:0px auto 0px auto;
+	border-bottom: 2px solid transparent;
+
+	color:#FF9933;
+	font-size:150%;
+	font-weight:bold;
+	font-family: "Trebuchet MS";
+	
+	-webkit-transform:scale(1,1.25); /* Safari and Chrome */
+	-moz-transform:scale(1,1.25); /* Firefox */
+	-ms-transform:scale(1,1.25); /* IE 9+ */
+	-o-transform:scale(1,1.25); /* Opera */
+	
+	-webkit-transition: all 1s ease;
+}
+
+/*The home glyphicon*/
+.main-nav ul li a span{
+	font-size:65px;
+}
+
+.main-nav ul li a:hover span{
+	color:#94B8FF;
+	border-color:transparent;
+	
+}
+
+/*The home page editable table*/
+.greeting-container{
+	display:table;
+	width:100%;
+	height:30%;
+	min-height:200px;
+
+}
+
+.greeting{
+	display:table-cell;
+	
+	text-align:center;
+	vertical-align:middle;
+	
+	font-family:'Gloria Hallelujah',cursive;
+	font-size:45px;
+	color:#3B3B3C;
+}
+
+/*Container for the greeting div*/
+
+
+
+/*Container for the editor table*/
+.container-table{
+	margin-left:auto;
+	margin-right:auto;
+	width:40%;
+	min-width:500px;
+	height:35%;
+	min-height:250px;
+	border-radius:10px;
+	background-color:#E0E0E0;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	
+}
+
+.table-button {
+	float:right;
+
+}
+
+.table-button:nth-child(2) {
+	margin-right:5px;
+	
+}
+
+.container-table-row > td:first-child{
+	color:#B3B3B3;
+	
+	border-right:1px solid grey;
+}
+
+.container-table-row > td{
+	padding:0 !important;
+	text-align:center;
+	
+	
+}
+
+.container-table-row td > input{
+	background:transparent;
+	width:100%;
+	border:none;
+	padding:0;
+	font-size:20px;
+}
+
+/* Projects page */
+
+.hexagon:before{
+	content: "";
+	width:0;height:0;
+	border-bottom: 30px solid #6C6;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+    position: absolute;
+    top: -30px;
+
+}
+
+.hexagon{
+	margin-top: 60px;
+    width: 104px;
+    height: 60px;
+    background-color: #6C6;
+    position: relative;
+}
+
+.hexagon:after {
+    content: "";
+    width: 0;
+    position: absolute;
+    bottom: -30px;
+    border-top: 30px solid #6C6;
+    border-left: 52px solid transparent;
+    border-right: 52px solid transparent;
+}
